@@ -104,3 +104,33 @@ for(i = 0; i < matriz1.length; i++){
     matrizInverso.push(linha1)
 }
 console.log(matrizInverso)
+
+//inverter as linhas, primeira com a ultima
+var Matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9],]
+
+var primeiro = Matriz[0]
+var ultimo = Matriz[Matriz.length - 1]
+
+Matriz[0] = ultimo
+Matriz[Matriz.length - 1] = primeiro
+
+console.log(Matriz)
+
+//receber uma matriz e retornar qual é o maior númeor e o menor numero
+var num = [[1, 2, 3], [4, 5, 6], [7, 8, 9],]
+var menor = Infinity
+var maior = -Infinity
+
+for(var i = 0; i < num.length; i++){
+    for(var j = 0; j < num[i].length; j++){
+       if(num[i][j] < menor){
+        menor = num[i][j]
+       }
+
+       if(num[i][j] > maior){
+        maior = num[i][j]
+       }
+    }
+}
+
+console.log(menor, maior)
