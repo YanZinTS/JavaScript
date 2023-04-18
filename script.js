@@ -61,3 +61,32 @@ if(pares == true){
 }else{
     console.log("nem todos ou todos são pares")
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------//
+
+//matriz + soma de linhas e coluna
+var matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+var soma = 0
+
+for(var linha = 0; linha < matriz.length; linha++) {
+    for(var coluna = 0; coluna < matriz[linha].length; coluna++){
+        soma = soma + matriz [linha] [coluna]
+    }
+}
+
+console.log(soma)
+
+//matriz + um numero inteiro, imprimir uma nova matriz
+var matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+var novamatriz = []
+
+for(i = 0; i < matriz.length; i++){
+    var linha = []
+    for(j = 0; j < matriz[i].length; j++){
+        if(matriz.length > 0){
+            linha.push(10 * matriz[i][j])
+        }
+    }
+    novamatriz.push(linha)
+}
+console.log(novamatriz)
