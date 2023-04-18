@@ -62,9 +62,9 @@ if(pares == true){
     console.log("nem todos ou todos são pares")
 }
 
-//---------------------------------------------------------------------------------------------------------------------------------------//
+//-----------------------------------------------------18/04/2023--------------------------------------------------------//
 
-//matriz + soma de linhas e coluna
+//matriz + soma de linhas e colunas
 var matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 var soma = 0
 
@@ -79,14 +79,28 @@ console.log(soma)
 //matriz + um numero inteiro, imprimir uma nova matriz
 var matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 var novamatriz = []
+var n = 10
 
 for(i = 0; i < matriz.length; i++){
     var linha = []
     for(j = 0; j < matriz[i].length; j++){
         if(matriz.length > 0){
-            linha.push(10 * matriz[i][j])
+            linha.push(n * matriz[i][j])
         }
     }
     novamatriz.push(linha)
 }
 console.log(novamatriz)
+
+//recebe uma matriz e retorna com os valores de linhas e colunas trocadas
+var matriz1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+var matrizInverso = []
+
+for(i = 0; i < matriz1.length; i++){
+    var linha1 = []
+    for(j = 0; j < matriz1[i].length; j++){
+       linha1.push(matriz1[j][i])
+    }
+    matrizInverso.push(linha1)
+}
+console.log(matrizInverso)
