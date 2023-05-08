@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#conteudo {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#conteudo .linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#conteudo .linha:nth-child(odd) .coluna:nth-child(odd) {
+    background-color: black;
+}
+
+#conteudo .linha:nth-child(even) .coluna:nth-child(even) {
+    background-color: black;
+}

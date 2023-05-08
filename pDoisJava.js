@@ -26,10 +26,38 @@ var linha = []
 
 for(i = 0; i < lista.length; i++){
     linha.push(lista[i])
-    if(linha.length > 9){
+    if(linha.length == 8){
         matriz.push(linha)
         linha = []
     }
 }
 
 console.log(matriz)
+
+//----------------------------------------- 02/05 ------------------------------------------------------//
+
+var matriz = []
+var linha = []
+
+for(i = 0; i < lista.length; i++){
+    linha.push(lista[i])
+    if(linha.length == 8){
+        matriz.push(linha)
+        linha = []
+    }
+}
+
+console.log(matriz)
+
+var conteudo = document.getElementById("conteudo")
+var html = ""
+
+for(var linha = 0; linha < matriz.length; linha++) {
+    html += "<div class='linha'>"
+    for(var coluna = 0; coluna < matriz[linha].length; coluna++) {
+        html += "<div class='coluna'></div>"
+    }
+    html += "</div>"
+}
+
+conteudo.innerHTML = html
